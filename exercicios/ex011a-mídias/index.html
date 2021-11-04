@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png"> <!--faz sentido mudar o (min-width) para (max-width).-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--os 50px a mais costumam equivaler ao tamnho da barra de rolagem, por isso vale colocá-los, para evitar que a barra de rolagem aprareça.-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível"><!--As imagens nos "source" tem que seguir a ordem, um "source" em cima do outro.-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/six-seasons-unicorn-heads.mp3" type="audio/mpeg">
+        <source src="media/six-seasons-unicorn-heads.ogg" type="audio/ogg">
+        <p>Infelizmente o seu navegador não consegue reproduzir o aúdio. Clique <a href="media/six-seasons-unicorn-heads.mp3" type="audio/mpeg">aqui</a> para baixar o arquivo.</p>
+    </audio>
+</body>
+</html>
