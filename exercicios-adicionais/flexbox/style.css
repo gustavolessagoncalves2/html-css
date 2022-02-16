@@ -1,0 +1,28 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.flex-container {
+    background-color: rgb(152, 212, 140);
+    height: 400px;
+    display: flex;
+    flex-direction: row; /*Define a direção dos itens no container (linha ou coluna)*/
+    flex-wrap: wrap; /*Define se os itens vão quebrar ou não no container*/
+    justify-content: center; /*Alinha os itens horizontalmente no container*/
+    align-items: center; /*Alinha os itens verticalmente no container*/
+    align-content: space-between; /*Alinha as linhas dos itens do container*/
+}
+
+.item {
+    background-color: rgb(238, 188, 122);
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+} 
